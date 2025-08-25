@@ -2,10 +2,9 @@ ARG PHP_VERSION=8.2
 FROM php:${PHP_VERSION}-apache
 
 ## ---------------------------------------------------------
-## Argumentos fijos (reemplazamos las variables por valores fijos)
+## Argumentos fijos
 ## ---------------------------------------------------------
 
-# Definir los valores que provienen del archivo .env
 ARG NEW_UID
 ARG NEW_GID
 ARG MY_USER
@@ -38,28 +37,10 @@ rm -rf /var/lib/apt/lists/* && \
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
 ## ---------------------------------------------------------
-## Instalar PHPUnit
-## ---------------------------------------------------------
-
-RUN wget https://phar.phpunit.de/phpunit-${PHPUNIT_VERSION}.phar -O /usr/local/bin/phpunit && \
-chmod +x /usr/local/bin/phpunit && \
-phpunit --version
-
-## ---------------------------------------------------------
 ## Copiar el contenido de la aplicación
 ## ---------------------------------------------------------
 
 COPY . /var/www/html
-
-## ---------------------------------------------------------
-## Instalar Node.js 18.x y npm y TypeScript
-## ---------------------------------------------------------
-
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
-    apt-get install -y nodejs && \
-    npm install -g npm && \
-    npm install -g typescript && \
-    npm install -g sass
 
 ## ---------------------------------------------------------
 ## Configurar bash

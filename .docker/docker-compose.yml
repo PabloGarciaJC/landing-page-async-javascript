@@ -46,22 +46,7 @@ services:
       - mysql
     networks:
       - network_${PROJECT_NAME}
-
-  phpunit:
-    build:
-      context: .
-      dockerfile: ./php_server/Dockerfile
-      args:
-        NEW_UID: ${NEW_UID}
-        NEW_GID: ${NEW_GID}
-        MY_USER: ${MY_USER}
-        MY_GROUP: ${MY_GROUP}
-    volumes:
-      - .:/app
-    networks:
-      - network_${PROJECT_NAME}
-    entrypoint: ["phpunit", "--configuration", "/app/phpunit.xml"]
-
+      
 networks:
   network_landingpagesass:
     name: network_${PROJECT_NAME}
