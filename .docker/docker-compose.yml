@@ -1,5 +1,5 @@
 services:
-  php_apache_ecommerce:
+  landing_page_async_javascript:
     build:
       context: .
       dockerfile: ./php_server/Dockerfile
@@ -8,17 +8,17 @@ services:
         NEW_GID: ${NEW_GID}
         MY_USER: ${MY_USER}
         MY_GROUP: ${MY_GROUP}
-    container_name: php_apache_ecommerce
+    container_name: landing_page_async_javascript
     ports:
       - "${PHP_APACHE_PORT}:80"
     volumes:
       - ../.:/var/www/html
     networks:
-      - network_ecommerce
+      - network_landing_page_async_javascript
 
   mysql:
     image: mysql:latest
-    container_name: mysql-ecommerce
+    container_name: mysql_landing_page_async_javascript
     ports:
       - "${MYSQL_PORT}:3306"
     environment:
@@ -29,15 +29,15 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     volumes:
       - ./database:/docker-entrypoint-initdb.d
-      - persistent-ecommerce:/var/lib/mysql:rw
+      - persistent_landing_page_async_javascript:/var/lib/mysql:rw
     depends_on:
-      - php_apache_ecommerce
+      - landing_page_async_javascript
     networks:
-      - network_ecommerce
+      - network_landing_page_async_javascript
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin-ecommerce
+    container_name: phpmyadmin-landing_page_async_javascript
     ports:
       - "${PHPMYADMIN_PORT}:80"
     environment:
@@ -45,7 +45,7 @@ services:
     depends_on:
       - mysql
     networks:
-      - network_ecommerce
+      - network_landing_page_async_javascript
 
   phpunit:
     build:
@@ -59,12 +59,12 @@ services:
     volumes:
       - .:/app
     networks:
-      - network_ecommerce
+      - network_landing_page_async_javascript
     entrypoint: ["phpunit", "--configuration", "/app/phpunit.xml"]
 
 networks:
-  network_ecommerce:
-    name: network_ecommerce
+  network_landing_page_async_javascript:
+    name: network_landing_page_async_javascript
 
 volumes:
-  persistent-ecommerce:
+  persistent_landing_page_async_javascript:
