@@ -42,8 +42,7 @@ export class PokemonCard extends HTMLElement {
     const d = this._data || { name: '', image: '', height: '', weight: '', types: [] };
 
     this.innerHTML = `
-      <article class="group relative p-4 rounded-xl shadow-lg hover:shadow-2xl transition bg-white/90"
-               style="border: 3px solid; border-image: linear-gradient(to right, #7e5bef, #9f7aea, #d946ef) 1;">
+      <article class="group relative p-4 rounded-xl shadow-lg hover:shadow-2xl transition bg-white/90" style="border: 3px solid; border-image: linear-gradient(to right, #7e5bef, #9f7aea, #d946ef) 1;">
         <div class="w-full bg-gray-200 aspect-square rounded-lg overflow-hidden flex items-center justify-center">
           <img src="${d.image}" alt="${d.name}" class="w-full h-full object-contain transition-transform duration-300 ease-out group-hover:scale-110 rounded-lg">
         </div>
