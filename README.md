@@ -9,7 +9,7 @@ El proyecto está pensado como base escalable para integrar futuras funcionalida
 
 [https://landing-page-sass.com/](https://landing-page-sass.pablogarciajc.com/)
 
-| ![Imagen 1](https://pablogarciajc.com/wp-content/uploads/2025/07/landing-page-sass1.webp) | ![Imagen 2](https://pablogarciajc.com/wp-content/uploads/2025/07/landing-page-sass2.webp) |
+| ![Imagen 1](https://pablogarciajc.com/wp-content/uploads/2025/09/pokedex_1.webp) | ![Imagen 2](https://pablogarciajc.com/wp-content/uploads/2025/09/pokedex_2.webp) |
 |-----------|-----------|
 
 ---
