@@ -1,13 +1,12 @@
 # Pokédex por Tipo – Tailwind & PokéAPI  
 
-Aplicación web desarrollada con **HTML5**, **TailwindCSS** y **JavaScript (ES Modules)** que consume la **[PokéAPI](https://pokeapi.co/)** para mostrar Pokémon organizados por tipos.  
-El proyecto está pensado como base escalable para integrar futuras funcionalidades como filtros dinámicos, buscador o paginación.
+Landing Page desarrollada con **HTML5**, **TailwindCSS** y **JavaScript Vanilla** que consume la **[PokéAPI](https://pokeapi.co/)** para mostrar Pokémon organizados por tipos.  
 
 ---
 
 ## Demo del Proyecto
 
-[https://landing-page-async-javascript/](https://pablogarciajc.com/proyectos-propios/landing-page-async-javascript/)
+[https://landing-page-async-javascript/](https://landing-page-async-javascript.pablogarciajc.com/)
 
 | ![Imagen 1](https://pablogarciajc.com/wp-content/uploads/2025/09/pokedex_1.webp) | ![Imagen 2](https://pablogarciajc.com/wp-content/uploads/2025/09/pokedex_2.webp) |
 |-----------|-----------|
