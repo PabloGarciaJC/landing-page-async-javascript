@@ -36,13 +36,19 @@ Landing Page desarrollada con **HTML5**, **TailwindCSS** y **JavaScript Vanilla*
 
 ---
 
-## Uso de Web Components en el Proyecto  
+## Web Component creado por mí y paquete npm
 
-Este proyecto implementa un **componente personalizado** llamado `<pokemon-card>`, lo que permite:  
+He desarrollado un **componente personalizado** llamado `<pokemon-card>` para mostrar tarjetas de Pokémon con información detallada (imagen, altura, peso y tipos). Este componente es de **mi autoría** y además está **publicado como paquete npm**, lo que permite reutilizarlo fácilmente en cualquier proyecto web.
 
-- **Modularidad**: cada Pokémon se renderiza en su propia tarjeta con datos dinámicos.  
-- **Reutilización**: el mismo componente puede insertarse en distintas secciones.  
-- **Encapsulación**: lógica de renderizado contenida dentro del Web Component.  
+- **Nombre del paquete:** `pokemon-card-component`  
+- **Página npm:** [https://www.npmjs.com/package/pokemon-card-component](https://www.npmjs.com/package/pokemon-card-component)  
+
+### Ventajas del componente
+
+- **Modularidad:** cada Pokémon se renderiza en su propia tarjeta con datos dinámicos.  
+- **Reutilización:** puede insertarse en distintas secciones del mismo proyecto o en otros proyectos web gracias al paquete npm.  
+- **Encapsulación:** la lógica de renderizado y los estilos están contenidos dentro del Web Component.  
+- **Compatibilidad:** funciona con **Vanilla JS**, **React** u otros frameworks que soporten Web Components.  
 
 ---
 
