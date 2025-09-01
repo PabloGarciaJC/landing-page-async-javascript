@@ -1,6 +1,9 @@
-# Landing Page – Sass
+# Pokédex por Tipo – Tailwind & PokéAPI  
 
-Landing page desarrollada con **HTML5** y **Sass** como preprocesador CSS, pensada como base escalable para integrar futuras funcionalidades, tecnologías o frameworks.
+Aplicación web desarrollada con **HTML5**, **TailwindCSS** y **JavaScript (ES Modules)** que consume la **[PokéAPI](https://pokeapi.co/)** para mostrar Pokémon organizados por tipos.  
+El proyecto está pensado como base escalable para integrar futuras funcionalidades como filtros dinámicos, buscador o paginación.
+
+---
 
 ## Demo del Proyecto
 
@@ -11,40 +14,41 @@ Landing page desarrollada con **HTML5** y **Sass** como preprocesador CSS, pensa
 
 ---
 
-## Funcionalidades principales
+## Funcionalidades principales  
 
-- Menú de navegación adaptable para dispositivos móviles y escritorio.
-- Secciones integradas: Inicio, Nosotros, Servicios, Portafolio y Contacto.
-- Formulario de contacto estilizado.
-
----
-
-## Tecnologías utilizadas
-
-- **HTML5 semántico**.
-- **Sass** (preprocesador CSS compilado a CSS puro).
-- **CSS3** (resultado compilado).
-- Entorno preparado para integrarse con herramientas como Vite o Webpack si se desea escalar.
+- Menú de navegación adaptable para dispositivos móviles y escritorio.  
+- Sección principal con Pokémon destacados en animación flotante.  
+- Listado dinámico de Pokémon **por tipo** (eléctrico, agua, fuego, etc.).  
+- Uso de **Web Components** (`<pokemon-card>`) para mostrar información detallada de cada Pokémon (imagen, altura, peso y tipos).  
+- Estilo responsivo con **TailwindCSS** y animaciones integradas.  
+- Manejo de errores al consumir la API.  
 
 ---
 
-## Uso de Sass en el Proyecto
+## Tecnologías utilizadas  
 
-Este proyecto utiliza **Sass** como preprocesador CSS para facilitar la escritura y mantenimiento de estilos, aplicando conceptos avanzados que permiten un código más limpio, modular y escalable.
+- **HTML5 semántico**.  
+- **TailwindCSS** (con CDN).  
+- **JavaScript (ES Modules)**.  
+- **Web Components** para componentes reutilizables.  
+- **PokéAPI** como fuente de datos oficiales de Pokémon.  
 
-### Conceptos y características principales usadas
+---
 
-- **Variables:** Para almacenar colores, tamaños y otros valores reutilizables, facilitando cambios globales y manteniendo consistencia.
-- **Mapas:** Colecciones clave-valor para agrupar colores de botones y otros estilos temáticos, mejorando la organización.
-- **Mixins:** Bloques reutilizables de estilos, como el mixin `flex-center` para centrar contenido con flexbox, que evitan la repetición y permiten parametrización.
-- **Funciones:** Para obtener valores dinámicos, por ejemplo, la función `btn-color($key)` que extrae colores de un mapa.
-- **Nesting (Anidación):** Permite escribir selectores CSS anidados de forma jerárquica y clara, reflejando la estructura HTML y mejorando la legibilidad.
-- **Operador `&`:** Usado para referirse al selector padre dentro de reglas anidadas, facilitando la escritura de estados como `:hover` o variantes como `.btn--primary`.
-- **Uso de módulos de Sass (`@use`):** Importación organizada de módulos oficiales (`sass:color`, `sass:map`) y archivos personalizados para mantener el código modular y limpio.
-- **Media queries anidados:** Incorporación de consultas responsivas dentro de bloques específicos para facilitar estilos adaptativos sin dispersar el código.
-- **Funciones de color (`color.adjust`):** Manipulación dinámica de colores para efectos visuales en estados como hover, mejorando la experiencia de usuario.
+## Uso de Web Components en el Proyecto  
 
-Gracias a estas características, el código CSS generado es limpio, eficiente y fácil de mantener, facilitando futuras escalas y modificaciones.
+Este proyecto implementa un **componente personalizado** llamado `<pokemon-card>`, lo que permite:  
+
+- **Modularidad**: cada Pokémon se renderiza en su propia tarjeta con datos dinámicos.  
+- **Reutilización**: el mismo componente puede insertarse en distintas secciones.  
+- **Encapsulación**: lógica de renderizado contenida dentro del Web Component.  
+
+### Características principales usadas  
+
+- **Setters y Getters (`data`)** → reciben los datos del Pokémon.  
+- **Método `render()`** → encargado de actualizar la vista.  
+- **Colores dinámicos por tipo** → definidos en un objeto `typeColors` que asigna estilos según el tipo (fuego, agua, eléctrico, etc.).  
+- **Estilos con Tailwind** → tarjetas con sombras, transiciones y diseño responsive.
 
 ---
 
