@@ -7,7 +7,7 @@ El proyecto está pensado como base escalable para integrar futuras funcionalida
 
 ## Demo del Proyecto
 
-[https://landing-page-sass.com/](https://landing-page-sass.pablogarciajc.com/)
+[https://landing-page-async-javascript/](https://pablogarciajc.com/proyectos-propios/landing-page-async-javascript/)
 
 | ![Imagen 1](https://pablogarciajc.com/wp-content/uploads/2025/09/pokedex_1.webp) | ![Imagen 2](https://pablogarciajc.com/wp-content/uploads/2025/09/pokedex_2.webp) |
 |-----------|-----------|
