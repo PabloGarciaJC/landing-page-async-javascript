@@ -36,9 +36,9 @@ Landing Page desarrollada con **HTML5**, **TailwindCSS** y **JavaScript Vanilla*
 
 ---
 
-## Web Component creado por mí y paquete npm
+## Web Component y paquete npm
 
-He desarrollado un **componente personalizado** llamado `<pokemon-card>` para mostrar tarjetas de Pokémon con información detallada (imagen, altura, peso y tipos). Este componente es de **mi autoría** y además está **publicado como paquete npm**, lo que permite reutilizarlo fácilmente en cualquier proyecto web.
+He desarrollado un **componente personalizado** para mostrar tarjetas de Pokémon con información detallada (imagen, altura, peso y tipos). Este componente es de **mi autoría** y además está **publicado como paquete npm**, lo que permite reutilizarlo fácilmente en cualquier proyecto web.
 
 - **Nombre del paquete:** `pokemon-card-component`  
 - **Página npm:** [https://www.npmjs.com/package/pokemon-card-component](https://www.npmjs.com/package/pokemon-card-component)  
