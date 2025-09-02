@@ -31,7 +31,6 @@ Landing Page desarrollada con **HTML5**, **TailwindCSS** y **JavaScript Vanilla*
 - **TailwindCSS** (con CDN).  
 - **JavaScript (ES Modules)**.  
 - **Async/Await** → manejo moderno de asincronía para consumir la PokéAPI.  
-- **Web Components** → creación de componentes reutilizables (`<pokemon-card>`).  
 - **PokéAPI** como fuente de datos oficiales de Pokémon.  
 
 ---
