@@ -90,3 +90,10 @@ npm-init:
 # y Construir con npm run build
 
 
+
+#npm install --save-dev webpack-dev-server@^4
+#npm install --save-dev html-webpack-plugin
+
+
+
+
