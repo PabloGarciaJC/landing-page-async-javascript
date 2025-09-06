@@ -86,7 +86,7 @@ npm-init:
 
 # Transpilar el JS mas Actual al navegegadorres mas antiguos con babel. "recuerda configurarlo en webpack" 	
 # Dar Permsis de ejecucion a node_modules y a dist 
-# npm install --save-dev babel-loader @babel/core @babel/preset-env --prefix ./my_local_node_modules
+# npm install --save-dev babel-loader @babel/core @babel/preset-env
 # y Construir con npm run build
 
 
