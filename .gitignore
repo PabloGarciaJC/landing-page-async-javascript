@@ -1,9 +1,6 @@
 # Ignorar dependencias
 node_modules/
 
-# Ignorar carpeta de salida de Webpack (compilación)
-dist/
-
 # Ignorar configuraciones de VSCode
 .vscode/
 
