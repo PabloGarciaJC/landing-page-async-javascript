@@ -55,8 +55,9 @@ He desarrollado un **componente personalizado** para mostrar tarjetas de Pokémo
 
 ### Requisitos Previos
 
-- Tener **Docker** y **Docker Compose** instalados.  
-- **Make**: Utilizado para automatizar procesos y gestionar contenedores de manera más eficiente.  
+- Tener **Docker** y **Docker Compose** instalados  
+- **Make**: utilizado para automatizar procesos y gestionar contenedores  
+- **Node.js** y **npm**: necesarios para instalar dependencias del proyecto y compilar los assets  
 
 ### Pasos de Instalación
 

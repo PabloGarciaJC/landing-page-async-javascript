@@ -52,14 +52,13 @@ phpunit --version
 COPY . /var/www/html
 
 ## ---------------------------------------------------------
-## Instalar Node.js 18.x y npm y TypeScript
+## Instalar Node.js 18.x, npm, TypeScript, Sass y Webpack
 ## ---------------------------------------------------------
 
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
     apt-get install -y nodejs && \
     npm install -g npm && \
-    npm install -g typescript && \
-    npm install -g sass
+    npm install -g typescript sass webpack webpack-cli
 
 ## ---------------------------------------------------------
 ## Configurar bash

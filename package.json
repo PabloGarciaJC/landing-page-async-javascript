@@ -1,20 +1,32 @@
 {
-  "name": "async-landing",
+  "name": "pokedex-tailwind",
   "version": "1.0.0",
-  "description": "Landing page desarrollada con **HTML5** y **Sass** como preprocesador CSS, pensada como base escalable para integrar futuras funcionalidades, tecnologías o frameworks.",
-  "main": "index.js",
+  "description": "Landing Page Pokédex con HTML5, TailwindCSS y PokéAPI usando Webpack.",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/platzi/async-landing.git"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "pokemon",
+    "pokedex",
+    "pokéapi",
+    "tailwindcss",
+    "webpack"
+  ],
+  "author": "Pablo García JC",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/platzi/async-landing/issues"
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.1",
+    "sass": "^1.77.6",
+    "sass-loader": "^16.0.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
   },
-  "homepage": "https://github.com/platzi/async-landing#readme"
+  "dependencies": {
+    "pokemon-card-component": "^1.0.10"
+  }
 }

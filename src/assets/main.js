@@ -1,4 +1,5 @@
-import { PokemonCard } from '../pokemon-card/index.js';
+
+import 'pokemon-card-component';
 
 const API = 'https://pokeapi.co/api/v2/pokemon?limit=100';
 const container = document.getElementById('pokemon-container');
@@ -31,7 +32,6 @@ async function fetchData(url) {
       const list = pokemons.filter(p => p.types.includes(type)).slice(0, 4);
       if (!list.length) return;
 
-      // Contenedor tipo grid
       const sectionHTML = document.createElement('div');
       sectionHTML.innerHTML = `
         <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 mt-8 mb-4 capitalize">
