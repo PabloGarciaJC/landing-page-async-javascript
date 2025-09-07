@@ -1,5 +1,6 @@
 
-import 'pokemon-card-component';
+import '../style.css';       // tus estilos globales
+import 'pokemon-card-component'; // tu componente con su propio CSS
 
 const API = 'https://pokeapi.co/api/v2/pokemon?limit=100';
 const container = document.getElementById('pokemon-container');

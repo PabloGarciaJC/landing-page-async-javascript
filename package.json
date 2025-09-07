@@ -32,6 +32,6 @@
     "webpack-dev-server": "^4.15.2"
   },
   "dependencies": {
-    "pokemon-card-component": "^1.0.10"
+    "pokemon-card-component": "^1.0.9"
   }
 }
