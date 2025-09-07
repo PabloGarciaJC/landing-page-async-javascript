@@ -84,15 +84,7 @@ shell:
 npm-init:
 	$(DOCKER_COMPOSE) exec --user pablogarciajc landing_page_async_javascript  npm init -y
 
-# Transpilar el JS mas Actual al navegegadorres mas antiguos con babel. "recuerda configurarlo en webpack" 	
-# Dar Permsis de ejecucion a node_modules y a dist 
-# npm install --save-dev babel-loader @babel/core @babel/preset-env
-# y Construir con npm run build
 
-
-
-#npm install --save-dev webpack-dev-server@^4
-#npm install --save-dev html-webpack-plugin
 
 
 
