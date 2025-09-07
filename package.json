@@ -1,7 +1,7 @@
 {
-  "name": "pokedex-tailwind",
+  "name": "landing-page-pokeapi.",
   "version": "1.0.0",
-  "description": "Landing Page Pokédex con HTML5, TailwindCSS y PokéAPI usando Webpack.",
+  "description": "Landing Page PokeApi con HTML5, TailwindCSS y usando Webpack.",
   "main": "dist/bundle.js",
   "scripts": {
     "dev": "webpack serve --mode development",
