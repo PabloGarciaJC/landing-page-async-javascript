@@ -1,4 +1,4 @@
-# Pokédex por Tipo – Tailwind & PokéAPI  
+# Landing Page - Pokeapi  
 
 Landing Page desarrollada con **HTML5**, **TailwindCSS** y **JavaScript Vanilla** que consume la **[PokéAPI](https://pokeapi.co/)** para mostrar Pokémon organizados por tipos.  
 
