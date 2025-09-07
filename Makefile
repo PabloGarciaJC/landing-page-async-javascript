@@ -29,7 +29,7 @@ npm-build:
 
 .PHONY: print-urls
 print-urls:
-	@echo "## Acceso a la Aplicación:   http://localhost:8081/src/"
+	@echo "## Acceso a la Aplicación:   http://localhost:8081/dist/"
 	@echo "## Acceso a PhpMyAdmin:      http://localhost:8082/"
 
 ## ---------------------------------------------------------
